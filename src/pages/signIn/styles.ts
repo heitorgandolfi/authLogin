@@ -29,23 +29,23 @@ export const PageContent = styled.section`
     flex-direction: column;
     align-items: center;
 
-    max-width: 440px;
+    max-width: 500px;
     width: 95%;
-    height: 420px;
+    height: 460px;
 
     background-color: #FFFFFF;
     border-radius: 20px;
     
     h3 {
         color: #101828;
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: bold;
 
-        margin: 48px 0 32px 0;
+        margin: 3rem 0 2.375rem 0;
     }
 
     p {
-        font-size: 16px;
+        font-size: 1rem;
         color: #98A2B3;
     }
 
@@ -70,28 +70,28 @@ export const LoginForm = styled.form`
 export const FormFieldWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 
     div {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 12px;
+        margin-bottom: 0.75rem;
     }
 
     #email {
-        margin-top: 12px;
+        margin-top: 0.75rem;
     }
 
     label {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         color: #344054;
     }
 
     input {
-        padding: 8px 12px;
-        font-size: 16px;
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
 
         border: 1px solid #DCE2E6;
         border-radius: 8px;
@@ -109,9 +109,10 @@ export const Button = styled.button`
     width: 100%;
     height: 42px;
 
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 24px;
+    font-size: 1rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
 
     color: #FFFF;
     background-color: #1570EF;
@@ -121,4 +122,27 @@ export const Button = styled.button`
     &:hover {
         opacity: 0.9;
     }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+`
+
+export const ProviderAuthButton = styled.button`
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+
+    width: 70%;
+    height: 32px;
+
+    font-size: 0.875rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
 `
